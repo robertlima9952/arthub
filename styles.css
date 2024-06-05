@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1E3D58; /* Azul escuro */
+    color: #fff;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    height: 200px; /* Reduzindo a altura do banner */
+    background: url('img primeira/design-a-logo-for-arthub-a-dynamic-social-platform-YAGPxJLkR3uRtiq1Wvw8jQ-smKJB2sbT46jzTn_3x396A.jpeg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    margin: 0; /* Removendo qualquer margem adicional */
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+    z-index: 1;
+}
+
+.banner__title {
+    position: relative;
+    z-index: 2;
+    margin: 0; /* Removendo qualquer margem adicional */
+    line-height: 200px; /* Alinhando o texto verticalmente */
+}
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.jobs, .events, .tutorials {
+    background-color: #f9f9f9;
+    width: 32%; /* Ajuste para três seções lado a lado */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.job-list, .event-list, .tutorial-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-card, .event-card, .tutorial-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.newsletter {
+    text-align: center;
+    background-color: #FFCB47; /* Amarelo */
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF6F61; /* Vermelho */
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1E3D58; /* Azul escuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links, .social-media, .contact-info, .privacy-policy {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .social-media a, .privacy-policy a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .sections-container {
+        flex-direction: column;
+    }
+    .jobs, .events, .tutorials {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
