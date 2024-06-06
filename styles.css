@@ -9,14 +9,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 8px;
+    padding: 0px 0px;
     background-color: #1E3D58; /* Azul escuro */
     color: #fff;
 }
 
 .logo img {
-    height: 80px;
-    width: auto;
+    height: 100px;
+    width: 200px;
+    margin-left: 100px;
 }
 
 nav ul {
@@ -148,4 +149,30 @@ footer {
         width: 100%;
         margin-top: 20px;
     }
+}
+/* Estilo para centralizar textos */
+.section-title, .about-us p {
+    text-align: center;
+    margin-right: 450px;
+    margin-left: 450px;
+}
+
+.nav__list, .footer-links {
+    display: flex;
+    justify-content: center;
+}
+/* Adiciona borda clara e espaçamento aos itens de navegação */
+.nav__item a {
+    border: 2px solid #ee6f4e; /* Borda clara */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 5px 10px; /* Espaçamento interno */
+    margin: 0 5px; /* Espaçamento entre os itens */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Cor do texto */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+}
+
+.nav__item a:hover {
+    background-color: #ee6f4e; /* Cor de fundo ao passar o mouse */
+    color: #1e3d58; /* Cor do texto ao passar o mouse */
 }
