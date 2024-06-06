@@ -16,21 +16,6 @@
             flex-direction: column;
             min-height: 100vh;
         }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 5px 8px;
-            background-color: #1E3D58; /* Azul escuro */
-            color: #fff;
-        }
-
-        .logo img {
-            height: 80px;
-            width: auto;
-        }
-
         nav ul {
             list-style: none;
             display: flex;
@@ -169,31 +154,30 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="img primeira/LOGO2.png" alt="ArtHub Logo">
-            </a>
-        </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html">Home</a></li><!-- Link para a página "Home" -->
-                <li class="nav__item"><a href="feed-de-publicações.html">Feed de Publicações</a></li><!-- Link para a página "Oportunidades Freelancer" -->
-                <li class="nav__item"><a href="eventos.html">Eventos</a></li><!-- Link para a página "Eventos" -->
-                <li class="nav__item"><a href="tutoriais.html">Tutoriais</a></li><!-- Link atualizado para a página "Tutoriais" -->
-                <li class="nav__item"><a href="contato.html">Contato</a></li><!-- Link para a página "Contato" -->
-                <li class="nav__item"><a href="sobre-nos.html">Sobre Nós</a></li><!-- Link para a página "Sobre Nós" -->
-            </ul>
-        </nav>
-        <div class="search-bar">
-            <form action="search.html" method="get">
-                <input type="text" name="q" placeholder="Buscar...">
-                <button type="submit">Pesquisar</button>
-            </form>
-        </div>
-    </header>
-
+   <!-- Header -->
+   <header class="header">
+    <div class="logo">
+        <a href="index.html"> <!-- Link para a página inicial -->
+            <img src="img primeira/LOGO2.png" alt="ArtHub Logo">
+        </a>
+    </div>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html">Home</a></li>
+            <li class="nav__item"><a href="feed-de-publicações.html">Feed de Publicações</a></li>
+            <li class="nav__item"><a href="eventos.html">Eventos</a></li>
+            <li class="nav__item"><a href="tutoriais.html">Tutoriais</a></li>
+            <li class="nav__item"><a href="contato.html">Contato</a></li>
+            <li class="nav__item"><a href="sobre-nos.html">Sobre Nós</a></li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <form action="search.html" method="get">
+            <input type="text" name="q" placeholder="Buscar...">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+</header>
     <!-- Banner Principal -->
     <section class="banner">
         <h1 class="banner__title">Feed de Publicações</h1>
