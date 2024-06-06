@@ -49,6 +49,8 @@
             height: auto;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
+            max-height: 200px; /* Limite de altura */
+            object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
         }
 
         .owl-carousel .item h3 {
@@ -106,8 +108,27 @@
             border-radius: 5px;
         }
 
+        .banner-image {
+            flex: 1;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            text-align: center;
+            max-height: calc(100vh - 200px); /* Ajuste a altura conforme necessário */
+            margin: 20px;
+            overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites */
+        }
+
+        .banner-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         @media (max-width: 768px) {
-            .feed-item, .event-item, .info-card {
+            .feed-item, .event-item, .info-card, .banner-image {
                 width: 100%;
                 margin: 10px 0;
             }
@@ -221,11 +242,9 @@
         <!-- Conteúdos futuros podem ser adicionados aqui -->
     </div>
 
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <h2 class="section-title">Inscreva-se para receber mais conteúdos</h2>
-        <input type="email" placeholder="Seu email" class="newsletter__input">
-        <button class="button">Inscrever-se</button>
+    <!-- Banner de Imagem -->
+    <section class="banner-image">
+        <img src="img primeira/FINAL_2.png" alt="Banner Placeholder">
     </section>
 
     <!-- Footer -->
