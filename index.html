@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtHub</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para o Feed */
+        .feed-container {
+            overflow-y: scroll;
+            max-height: calc(100vh - 200px); /* Ajuste a altura conforme necessário */
+        }
+
+        .feed {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+            max-width: 1200px; /* Ajuste a largura conforme necessário */
+            margin: 0 auto;
+        }
+
+        .feed-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: calc(25% - 20px); /* Ajuste para 4 itens por linha */
+            margin: 10px;
+            text-align: center;
+        }
+
+        .feed-item img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .feed-item h3 {
+            color: #333;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .feed-item p {
+            color: #666;
+            font-size: 1em;
+            margin: 10px;
+        }
+
+        .feed-item a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .feed-item {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -25,7 +87,10 @@
             </ul>
         </nav>
         <div class="search-bar">
-            <input type="text" placeholder="Buscar...">
+            <form action="search.html" method="get">
+                <input type="text" name="q" placeholder="Buscar...">
+                <button type="submit">Pesquisar</button>
+            </form>
         </div>
     </header>
 
@@ -33,6 +98,49 @@
     <section class="banner">
         <h1 class="banner__title">Bem-vindo ao ArtHub, seu portal para oportunidades no mundo da arte!</h1>
     </section>
+
+    <!-- Feed Container with Scrollbar -->
+    <div class="feed-container">
+        <section class="feed">
+            <div class="feed-item">
+                <img src="img primeira/a-spine-chilling-3d-render-of-a-jinn-with-blazing--htXQz7_qRQSM1BorVBzLKg-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Exposição de Arte">
+                <h3>Exposição de Arte</h3>
+                <p>Confira as últimas exposições de arte em nossa galeria.</p>
+                <a href="#">Ver Mais</a>
+            </div>
+            <div class="feed-item">
+                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Workshop de Escultura">
+                <h3>Workshop de Escultura</h3>
+                <p>Aprenda técnicas de escultura com nossos especialistas.</p>
+                <a href="#">Ver Mais</a>
+            </div>
+            <div class="feed-item">
+                <img src="img primeira/a-spine-chilling-3d-render-of-a-dark-fantasy-jinn--chd2ac-8SS24FoME7OBYHw-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Concerto de Música">
+                <h3>Concerto de Música</h3>
+                <p>Desfrute de um concerto de música clássica no teatro municipal.</p>
+                <a href="#">Ver Mais</a>
+            </div>
+            <div class="feed-item">
+                <img src="img primeira/a-spine-chilling-3d-render-of-a-jinn-with-blazing--htXQz7_qRQSM1BorVBzLKg-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Exposição de Arte">
+                <h3>Exposição de Arte</h3>
+                <p>Confira as últimas exposições de arte em nossa galeria.</p>
+                <a href="#">Ver Mais</a>
+            </div>
+            <div class="feed-item">
+                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Workshop de Escultura">
+                <h3>Workshop de Escultura</h3>
+                <p>Aprenda técnicas de escultura com nossos especialistas.</p>
+                <a href="#">Ver Mais</a>
+            </div>
+            <div class="feed-item">
+                <img src="img primeira/a-spine-chilling-3d-render-of-a-dark-fantasy-jinn--chd2ac-8SS24FoME7OBYHw-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Concerto de Música">
+                <h3>Concerto de Música</h3>
+                <p>Desfrute de um concerto de música clássica no teatro municipal.</p>
+                <a href="#">Ver Mais</a>
+            </div>
+            <!-- Adicione mais itens de feed conforme necessário -->
+        </section>
+    </div>
 
     <!-- Espaço livre para publicações futuras -->
     <div class="publications">
@@ -60,16 +168,12 @@
             <a href="#" class="social-media__link">Facebook</a>
             <a href="#" class="social-media__link">Twitter</a>
             <a href="#" class="social-media__link">Instagram</a>
-            <a href="#" class="social-media__link">LinkedIn</a>
-        </div>
+                </div>
         <div class="contact-info">
             <p class="contact-info__item">Endereço: Rua Exemplo, 123</p>
             <p class="contact-info__item">Email: contato@arthub.com</p>
-            <p class="contact-info__item">Telefone: (11) 1234-5678</p>
-        </div>
-        <div class="privacy-policy">
-            <a href="#" class="privacy-policy__link">Política de Privacidade</a>
-        </div>
+            <p class="contact-info__item">Telefone: (81) 1234-5678</p>
+              </div>
     </footer>
 </body>
 </html>
