@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArtHub</title>
+    <title>Feed de Publicações - ArtHub</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -20,13 +20,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
+            padding: 5px 8px;
             background-color: #1E3D58; /* Azul escuro */
             color: #fff;
         }
 
         .logo img {
-            height: 40px;
+            height: 80px;
             width: auto;
         }
 
@@ -78,71 +78,6 @@
             line-height: 200px; /* Alinhando o texto verticalmente */
         }
 
-        .sections-container {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-        }
-
-        .jobs, .events, .tutorials {
-            background-color: #f9f9f9;
-            width: 32%; /* Ajuste para três seções lado a lado */
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .filters select {
-            margin-right: 10px;
-            padding: 5px;
-        }
-
-        .job-list, .event-list, .tutorial-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .job-card, .event-card, .tutorial-card {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-        }
-
-        footer {
-            background-color: #1E3D58; /* Azul escuro */
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: auto;
-        }
-
-        .footer-links, .social-media, .contact-info, .privacy-policy {
-            margin-bottom: 10px;
-        }
-
-        .footer-links a, .social-media a, .privacy-policy a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .sections-container {
-                flex-direction: column;
-            }
-            .jobs, .events, .tutorials {
-                width: 100%;
-                margin-top: 20px;
-            }
-        }
-
-        /* Estilos para o Feed */
         .feed-container {
             max-height: calc(100vh - 200px); /* Ajuste a altura conforme necessário */
             overflow-y: auto;
@@ -200,6 +135,34 @@
         @media (max-width: 768px) {
             .feed-item {
                 width: 100%;
+            }
+        }
+
+        footer {
+            background-color: #1E3D58; /* Azul escuro */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Empurra o rodapé para o final da página */
+        }
+
+        .footer-links, .social-media, .contact-info, .privacy-policy {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a, .social-media a, .privacy-policy a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .sections-container {
+                flex-direction: column;
+            }
+            .jobs, .events, .tutorials {
+                width: 100%;
+                margin-top: 20px;
             }
         }
     </style>
@@ -264,90 +227,54 @@
                 <a href="#">Ver Mais</a>
             </div>
             <div class="feed-item">
-                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Concerto de Música">
-                <h3>Concerto de Música</h3>
-                <p>Desfrute de um concerto de música clássica no teatro municipal.</p>
+                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Feira de Arte Digital">
+                <h3>Feira de Arte Digital</h3>
+                <p>Explore as novas tendências na arte digital.</p>
                 <a href="#">Ver Mais</a>
             </div>
             <!-- Segunda Fileira -->
             <div class="feed-item">
-                <img src="img primeira/a-spine-chilling-3d-render-of-a-dark-fantasy-jinn--chd2ac-8SS24FoME7OBYHw-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Nova Exposição">
-                <h3>Nova Exposição</h3>
-                <p>Não perca a nova exposição que começa este mês.</p>
+                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Exposição de Arte">
+                <h3>Exposição de Arte</h3>
+                <p>Confira as últimas exposições de arte em nossa galeria.</p>
                 <a href="#">Ver Mais</a>
             </div>
             <div class="feed-item">
-                <img src="img primeira/a-spine-chilling-3d-render-of-a-jinn-with-blazing--htXQz7_qRQSM1BorVBzLKg-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Aula de Pintura">
-                <h3>Aula de Pintura</h3>
-                <p>Inscreva-se na nossa aula de pintura ao ar livre.</p>
+                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Workshop de Escultura">
+                <h3>Workshop de Escultura</h3>
+                <p>Aprenda técnicas de escultura com nossos especialistas.</p>
                 <a href="#">Ver Mais</a>
             </div>
             <div class="feed-item">
-                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Workshop de Cerâmica">
-                <h3>Workshop de Cerâmica</h3>
-                <p>Participe do nosso workshop de cerâmica com artistas locais.</p>
+                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Curso de Desenho">
+                <h3>Curso de Desenho</h3>
+                <p>Melhore suas habilidades em desenho com nossos cursos.</p>
                 <a href="#">Ver Mais</a>
             </div>
             <div class="feed-item">
-                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Sessão de Poesia">
-                <h3>Sessão de Poesia</h3>
-                <p>Venha assistir às nossas sessões de poesia ao vivo.</p>
+                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Palestra de Fotografia">
+                <h3>Palestra de Fotografia</h3>
+                <p>Participa da nossa palestra com fotógrafos renomados.</p>
                 <a href="#">Ver Mais</a>
             </div>
             <div class="feed-item">
-                <img src="img primeira/a-spine-chilling-3d-render-of-a-jinn-with-blazing--htXQz7_qRQSM1BorVBzLKg-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Curso de Fotografia">
-                <h3>Curso de Fotografia</h3>
-                <p>Aprenda técnicas avançadas de fotografia com nossos cursos.</p>
-                <a href="#">Ver Mais</a>
-            </div>
-            <!-- Terceira Fileira -->
-            <div class="feed-item">
-                <img src="img primeira/a-spine-chilling-3d-render-of-a-dark-fantasy-jinn--chd2ac-8SS24FoME7OBYHw-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Exposição de Esculturas">
-                <h3>Exposição de Esculturas</h3>
-                <p>Confira as novas esculturas expostas em nossa galeria.</p>
-                <a href="#">Ver Mais</a>
-            </div>
-            <div class="feed-item">
-                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Aula de Teatro">
-                <h3>Aula de Teatro</h3>
-                <p>Participe das nossas aulas de teatro e desenvolva suas habilidades.</p>
-                <a href="#">Ver Mais</a>
-            </div>
-            <div class="feed-item">
-                <img src="img primeira/a-spine-chilling-3d-render-of-a-jinn-with-blazing--htXQz7_qRQSM1BorVBzLKg-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Palestra de Arte Moderna">
-                <h3>Palestra de Arte Moderna</h3>
-                <p>Assista à palestra sobre arte moderna com especialistas.</p>
-                <a href="#">Ver Mais</a>
-            </div>
-            <div class="feed-item">
-                <img src="img primeira/a-spine-chilling-3d-render-of-a-dark-fantasy-jinn--chd2ac-8SS24FoME7OBYHw-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Oficina de Artesanato">
-                <h3>Oficina de Artesanato</h3>
-                <p>Participe da nossa oficina de artesanato e aprenda novas técnicas.</p>
-                <a href="#">Ver Mais</a>
-            </div>
-            <div class="feed-item">
-                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Mostra de Cinema">
-                <h3>Mostra de Cinema</h3>
-                <p>Assista aos filmes selecionados na nossa mostra de cinema.</p>
+                <img src="img primeira/jinn-with-burning-red-scary-eyes-spooky-scary-dark-UTXAcYoDSDauaWqL01tXdA-El8K7JGbSq6ptnNOkQsrvA.jpeg" alt="Feira de Arte Digital">
+                <h3>Feira de Arte Digital</h3>
+                <p>Explore as novas tendências na arte digital.</p>
                 <a href="#">Ver Mais</a>
             </div>
         </section>
     </div>
 
-    <!-- Espaço livre para publicações futuras -->
-    <div class="publications">
-        <!-- Conteúdos futuros podem ser adicionados aqui -->
-    </div>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-links">
-            <a href="index.html" class="footer-link">Home</a><!-- Link para a página "Home" -->
-            <a href="feed-de-publicações.html" class="footer-link">Feed de Publicações</a><!-- Link para a página "Oportunidades Freelancer" -->
-            <a href="eventos.html" class="footer-link">Eventos</a><!-- Link para a página "Eventos" -->
-            <a href="tutoriais.html" class="footer-link">Tutoriais</a><!-- Link atualizado para a página "Tutoriais" -->
-            <a href="contato.html" class="footer-link">Contato</a><!-- Link para a página "Contato" -->
-            <a href="sobre-nos.html" class="footer-link">Sobre Nós</a><!-- Link para a página "Sobre Nós" -->
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="feed-de-publicações.html" class="footer-link">Feed de Publicações</a>
+            <a href="eventos.html" class="footer-link">Eventos</a>
+            <a href="tutoriais.html" class="footer-link">Tutoriais</a>
+            <a href="contato.html" class="footer-link">Contato</a>
+            <a href="sobre-nos.html" class="footer-link">Sobre Nós</a>
         </div>
         <div class="social-media">
             <a href="#" class="social-media__link">Facebook</a>
@@ -355,8 +282,8 @@
             <a href="#" class="social-media__link">Instagram</a>
         </div>
         <div class="contact-info">
-                       <p class="contact-info__item">Email: contato@arthub.com</p>
-            <p class="contact-info__item">Telefone: (81) 1234-5678</p>
+            <p class="contact-info__item">Email: contato@arthub.com</p>
+            <p class="contact-info__item">Telefone: (11) 1234-5678</p>
         </div>
     </footer>
 </body>
