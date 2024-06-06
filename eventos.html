@@ -5,6 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos - ArtHub</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1E3D58; /* Azul escuro */
+            color: #fff;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            height: 200px; /* Reduzindo a altura do banner */
+            background: url('img primeira/design-a-logo-for-arthub-a-dynamic-social-platform-YAGPxJLkR3uRtiq1Wvw8jQ-smKJB2sbT46jzTn_3x396A.jpeg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            margin: 0; /* Removendo qualquer margem adicional */
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+            z-index: 1;
+        }
+
+        .banner__title {
+            position: relative;
+            z-index: 2;
+            margin: 0; /* Removendo qualquer margem adicional */
+            line-height: 200px; /* Alinhando o texto verticalmente */
+        }
+
+        .events-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            flex: 1; /* Expande a lista de eventos para ocupar o espaço disponível */
+        }
+
+        .event-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            max-width: 300px;
+            padding: 20px;
+            text-align: center;
+            width: calc(33.333% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .event-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .event-card__title {
+            color: #333;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .event-card__date,
+        .event-card__location,
+        .event-card__description {
+            color: #666;
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .event-card__link {
+            background-color: #007BFF;
+            border-radius: 5px;
+            color: #fff;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #1E3D58; /* Azul escuro */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Empurra o rodapé para o final da página */
+        }
+
+        .footer-links, .social-media, .contact-info, .privacy-policy {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a, .social-media a, .privacy-policy a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .events-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .event-card {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -25,10 +180,7 @@
             </ul>
         </nav>
         <div class="search-bar">
-            <form action="search.html" method="get">
-                <input type="text" name="q" placeholder="Buscar...">
-                <button type="submit">Pesquisar</button>
-            </form>
+            <input type="text" placeholder="Buscar...">
         </div>
     </header>
 
@@ -40,26 +192,30 @@
     <!-- Lista de Eventos -->
     <section class="events-list">
         <div class="event-card">
-            <h2 class="event-card__title">Exposição de Pintura</h2>
-            <p class="event-card__date">Data: 15 de julho de 2024</p>
-            <p class="event-card__location">Local: Galeria de Arte X</p>
-            <p class="event-card__description">Venha apreciar as obras dos artistas locais na nossa exposição de pintura.</p>
-            <a href="#" class="event-card__link">Mais informações</a>
+            <img src="img primeira/evento 1.jpg" alt="Exposição de Pintura">
+            <h2 class="event-card__title">Exposição 40 Anos em Movimento</h2>
+            <b class="event-card__date">01 JAN - 10:00h a 31 DEZ - 16:00h</b>
+            <p class="event-card__location">Local: Museu da Cidade do Recife - Forte das 5 Pontas</p>
+            <p class="event-card__description">Venha apreciar as obras dos artistas locais nessa exposição de pintura.</p>
+            <a href="https://conecta.recife.pe.gov.br/evento/276" class="event-card__link">Mais informações</a>
         </div>
         <div class="event-card">
-            <h2 class="event-card__title">Workshop de Escultura</h2>
-            <p class="event-card__date">Data: 20 de agosto de 2024</p>
-            <p class="event-card__location">Local: Ateliê de Arte Y</p>
-            <p class="event-card__description">Participe do nosso workshop e aprenda técnicas avançadas de escultura.</p>
-            <a href="#" class="event-card__link">Mais informações</a>
+            <img src="img primeira/evento 2.jpg" alt="Workshop de Escultura">
+            <h2 class="event-card__title">Feira de Artesanato da Praça do Arsenal</h2>
+            <b class="event-card__date">08 JUN - 11:00h a 08 JUN - 20:00h</b>
+            <p class="event-card__location">Local: Praça do Arsenal</p>
+            <p class="event-card__description">Mais uma edição do Projeto Arsenal Das Artes, arte cultura e lazer.</p>
+            <a href="https://conecta.recife.pe.gov.br/evento/1815" class="event-card__link">Mais informações</a>
         </div>
         <div class="event-card">
-            <h2 class="event-card__title">Concerto de Música Clássica</h2>
-            <p class="event-card__date">Data: 5 de setembro de 2024</p>
-            <p class="event-card__location">Local: Teatro Municipal Z</p>
-            <p class="event-card__description">Desfrute de uma noite de música clássica com artistas renomados.</p>
-            <a href="#" class="event-card__link">Mais informações</a>
+            <img src="img primeira/evento 3.jpg" alt="Concerto de Música Clássica">
+            <h2 class="event-card__title">Jogos do Orgulho do Recife 2024</h2>
+            <b class="event-card__date">08 JUN - 08:00h a 09 JUN - 20:00h</b>
+            <p class="event-card__location">Local: Geraldão - Ginásio de Esportes Geraldo Magalhães</p>
+            <p class="event-card__description">Tá chegando: Jogos do Orgulho 2024! Os Jogos vão acontecer dia 08 e 09 de junho lá no Geraldão. Vamos ter queimado, vôlei, futsal, muita cultura e parceiros incríveis. Então já reserva teu horário aí no final de semana que vai ser massa, visse?</p>
+            <a href="https://conecta.recife.pe.gov.br/evento/1814" class="event-card__link">Mais informações</a>
         </div>
+        <!-- Adicione mais cards de eventos conforme necessário -->
     </section>
 
     <!-- Footer -->
@@ -82,7 +238,7 @@
             <p class="contact-info__item">Endereço: Rua Exemplo, 123</p>
             <p class="contact-info__item">Email: contato@arthub.com</p>
             <p class="contact-info__item">Telefone: (11) 1234-5678</p>
-             </div>
-    </footer>
+        </div>
+          </footer>
 </body>
 </html>
