@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Estilos para o Feed */
         .main-container {
@@ -162,6 +163,11 @@
                 <li class="nav__item"><a href="sobre-nos.html">Sobre Nós</a></li>
             </ul>
         </nav>
+        <div class="social-media-top">
+            <a href="#" class="social-media__link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-media__link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-media__link"><i class="fab fa-instagram"></i></a>
+        </div>
         <div class="search-bar">
             <form action="search.html" method="get">
                 <input type="text" name="q" placeholder="Buscar...">
@@ -218,37 +224,32 @@
                     <div class="item">
                         <img src="img primeira/evento 2.jpg" alt="Workshop de Escultura">
                         <h3>Workshop de Escultura</h3>
-                        <p>Aprenda técnicas de escultura com nossos especialistas.</p>
-                        <a href="https://conecta.recife.pe.gov.br/evento/1815" class="event-card__link">Mais informações</a>
+                        <p>Participe do nosso próximo workshop de escultura.</p>
+                        <a href="https://www.recife.pe.gov.br/" class="event-card__link">Mais informações</a>
                     </div>
                     <div class="item">
                         <img src="img primeira/evento 3.jpg" alt="Concerto de Música">
                         <h3>Concerto de Música</h3>
-                        <p>Desfrute de um concerto de música clássica no teatro municipal.</p>
-                        <a href="https://conecta.recife.pe.gov.br/evento/1814" class="event-card__link">Mais informações</a>
+                        <p>Desfrute de concertos de música ao vivo com artistas renomados.</p>
+                        <a href="https://www.recife.pe.gov.br/" class="event-card__link">Mais informações</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Card de Informações -->
+        <!-- Info Card -->
         <div class="info-card">
-            <h2>Informações Importantes</h2>
-            <p>O site está em fase de criação, as vagas e publicações disponíveis são apenas para ilustrar como funciona. Fique à vontade para explorar e experimentar. Se precisar de mais informações ou tiver alguma dúvida, estou à disposição! 🧑‍🎨<br><br>
-                Desfrute totalmente do site! Ele é gratuito e oferece uma experiência incrível. Se você deseja compartilhar suas ideias, histórias ou talentos, entre em contato conosco para ter sua postagem publicada no site. Mal podemos esperar para ver o que você tem a oferecer! 😊</p>
-            <a href="https://www.instagram.com/arthub5760/">Saiba Mais</a>
+            <h2>Oportunidades em Destaque</h2>
+            <p>Explore as oportunidades em destaque na nossa comunidade artística.</p>
+            <a href="https://www.instagram.com/estelita.recife/">Descubra mais</a>
+            <a href="https://conecta.recife.pe.gov.br/evento/276">Eventos</a>
         </div>
     </div>
 
-    <!-- Espaço livre para publicações futuras -->
-    <div class="publications">
-        <!-- Conteúdos futuros podem ser adicionados aqui -->
+    <!-- Imagem de Banner -->
+    <div class="banner-image">
+        <img src="img primeira/FINAL_2.png" alt="Banner">
     </div>
-
-    <!-- Banner de Imagem -->
-    <section class="banner-image">
-        <img src="img primeira/FINAL_2.png" alt="Banner Placeholder">
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -261,9 +262,9 @@
             <a href="sobre-nos.html" class="footer-link">Sobre Nós</a>
         </div>
         <div class="social-media">
-            <a href="#" class="social-media__link">Facebook</a>
-            <a href="#" class="social-media__link">Twitter</a>
-            <a href="#" class="social-media__link">Instagram</a>
+            <a href="#" class="social-media__link"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" class="social-media__link"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#" class="social-media__link"><i class="fab fa-instagram"></i> Instagram</a>
         </div>
         <div class="contact-info">
             <p class="contact-info__item">Email: contato@arthub.com</p>
@@ -276,18 +277,18 @@
     <script>
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    600:{
-                        items:2
+                    600: {
+                        items: 2
                     },
-                    1000:{
-                        items:3
+                    1000: {
+                        items: 3
                     }
                 }
             });
