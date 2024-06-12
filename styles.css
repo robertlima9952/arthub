@@ -9,27 +9,28 @@ body {
 /* Estilo do cabeçalho */
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 0px;
-    background-color: #1E3D58; /* Azul escuro */
+    padding: 10px;
+    background-color: #1E3D58;
     color: #fff;
 }
 
 /* Estilo da logo */
 .logo img {
     height: 100px;
-    width: 200px;
-    margin-left: 120px;
+    width: auto;
+    margin: 0 20px;
 }
 
 /* Estilo da lista de navegação */
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    margin-right: 200px;
-    margin-left: 50px;
+    margin: 0 20px;
 }
 
 /* Estilo dos links da navegação */
@@ -42,7 +43,7 @@ nav ul li a {
 .search-bar {
     display: flex;
     gap: 10px;
-    margin-right: 100px;
+    margin: 10px 20px;
 }
 
 /* Estilo do campo de entrada da barra de pesquisa */
@@ -53,29 +54,29 @@ nav ul li a {
 /* Estilo do botão da barra de pesquisa */
 .search-bar button {
     padding: 5px 10px;
-    border: 2px solid #ee6f4e; /* Borda clara */
-    border-radius: 5px; /* Cantos arredondados */
-    background-color: #1E3D58; /* Azul escuro */
+    border: 2px solid #ee6f4e;
+    border-radius: 5px;
+    background-color: #1E3D58;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Estilo do botão da barra de pesquisa ao passar o mouse */
 .search-bar button:hover {
-    background-color: #ee6f4e; /* Cor de fundo ao passar o mouse */
-    color: #1E3D58; /* Cor do texto ao passar o mouse */
+    background-color: #ee6f4e;
+    color: #1E3D58;
 }
 
 /* Estilo do banner */
 .banner {
     position: relative;
     text-align: center;
-    height: 200px; /* Reduzindo a altura do banner */
+    height: 200px;
     background: url('img primeira/design-a-logo-for-arthub-a-dynamic-social-platform-YAGPxJLkR3uRtiq1Wvw8jQ-smKJB2sbT46jzTn_3x396A.jpeg') no-repeat center center;
     background-size: cover;
     color: #fff;
-    margin: 0; /* Removendo qualquer margem adicional */
+    margin: 0;
 }
 
 /* Sobreposição escura no banner */
@@ -86,7 +87,7 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -94,13 +95,14 @@ nav ul li a {
 .banner__title {
     position: relative;
     z-index: 2;
-    margin: 0; /* Removendo qualquer margem adicional */
-    line-height: 200px; /* Alinhando o texto verticalmente */
+    margin: 0;
+    line-height: 200px;
 }
 
 /* Contêiner das seções principais */
 .sections-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
 }
@@ -108,9 +110,10 @@ nav ul li a {
 /* Estilo das seções de jobs, events, e tutorials */
 .jobs, .events, .tutorials {
     background-color: #f9f9f9;
-    width: 32%; /* Ajuste para três seções lado a lado */
+    width: 32%;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 /* Estilo do título das seções */
@@ -143,7 +146,7 @@ nav ul li a {
 /* Estilo do contêiner da newsletter */
 .newsletter {
     text-align: center;
-    background-color: #FFCB47; /* Amarelo */
+    background-color: #FFCB47;
     color: #fff;
     padding: 40px 20px;
 }
@@ -158,17 +161,17 @@ nav ul li a {
 .newsletter button {
     padding: 10px 20px;
     border: none;
-    background-color: #FF6F61; /* Vermelho */
+    background-color: #FF6F61;
     color: #fff;
     cursor: pointer;
 }
 
 /* Estilo do rodapé */
 footer {
-    background-color: #1E3D58; /* Azul escuro */
+    background-color: #1E3D58;
     color: #fff;
     text-align: center;
-    padding: 10px; /* Reduzindo a altura do padding */
+    padding: 10px;
 }
 
 /* Estilo dos links e informações do rodapé */
@@ -181,12 +184,12 @@ footer {
     color: #fff;
     text-decoration: none;
     margin-right: 10px;
-    transition: color 0.3s; /* Transição suave para hover */
+    transition: color 0.3s;
 }
 
 /* Estilo dos links clicáveis do rodapé ao passar o mouse */
 .footer-links a:hover, .privacy-policy a:hover {
-    color: #ee6f4e; /* Cor laranja ao passar o mouse */
+    color: #ee6f4e;
 }
 
 /* Estilo da seção de redes sociais no rodapé */
@@ -201,30 +204,51 @@ footer {
     color: #fff;
     text-decoration: none;
     margin: 0 5px;
-    font-size: 1em; /* Ajustando o tamanho da fonte */
+    font-size: 1em;
 }
 
 /* Estilo dos textos de contato no rodapé */
 .contact-info p {
-    margin: 5px 0; /* Reduzindo a margem dos textos de contato */
+    margin: 5px 0;
 }
 
 /* Estilo responsivo para telas menores */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .search-bar {
+        margin-right: 0;
+    }
+
     .sections-container {
         flex-direction: column;
     }
+
     .jobs, .events, .tutorials {
         width: 100%;
         margin-top: 20px;
+    }
+
+    .section-title, .about-us p {
+        margin: 0 20px;
     }
 }
 
 /* Estilo para centralizar textos */
 .section-title, .about-us p {
     text-align: center;
-    margin-right: 450px;
-    margin-left: 450px;
 }
 
 /* Estilo para alinhar a lista de navegação e links do rodapé */
@@ -235,56 +259,57 @@ footer {
 
 /* Estilo dos itens de navegação */
 .nav__item a {
-    border: 2px solid #ee6f4e; /* Borda clara */
-    border-radius: 5px; /* Cantos arredondados */
-    padding: 5px 10px; /* Espaçamento interno */
-    margin: 0 5px; /* Espaçamento entre os itens */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: white; /* Cor do texto */
-    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+    border: 2px solid #ee6f4e;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Estilo dos itens de navegação ao passar o mouse */
 .nav__item a:hover {
-    background-color: #ee6f4e; /* Cor de fundo ao passar o mouse */
-    color: #1e3d58; /* Cor do texto ao passar o mouse */
+    background-color: #ee6f4e;
+    color: #1e3d58;
 }
 
 /* Estilo dos links de redes sociais */
 .social-media__link {
-    color: white; /* Cor padrão dos ícones */
-    font-size: 1em; /* Ajustando o tamanho da fonte para igualar com as outras informações */
+    color: white;
+    font-size: 1em;
     margin: 0 10px;
 }
 
 /* Estilo dos links de redes sociais ao passar o mouse */
 .social-media__link:hover {
-    color: #ee6f4e; /* Altere esta cor para a cor desejada ao passar o mouse */
+    color: #ee6f4e;
 }
+
 /* Estilo do contêiner da imagem do banner */
 .banner-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 0; /* Define o padding inicial */
-    max-width: 100%; /* Limita a largura máxima do banner */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* Estilo do contêiner da imagem do banner */
 .banner-image {
-    width: 100%; /* Garante que o contêiner ocupe 100% da largura */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a altura definida */
-    height: 50vh; /* Define a altura para metade da altura da viewport */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    width: 100%;
+    overflow: hidden;
+    height: 50vh;
+    box-sizing: border-box;
 }
 
 /* Estilo da imagem do banner */
 .banner-image img {
-    width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
-    height: 100%; /* Garante que a imagem ocupe 100% da altura do contêiner */
-    object-fit: cover; /* Corta a imagem para preencher o contêiner sem distorcer */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Classes utilitárias para alterar margin e padding do banner */
